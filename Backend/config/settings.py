@@ -43,7 +43,8 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
    'rest_framework',
    'corsheaders',
-   
+   'import_export',
+
 ]
 
 LOCAL_APPS = [
@@ -65,6 +66,11 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+]
+
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
